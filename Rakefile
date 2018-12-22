@@ -8,7 +8,7 @@ require "jekyll"
 GITHUB_REPONAME    = "jmensch/jmensch.github.io"
 GITHUB_REPO_BRANCH = "master"
 
-SOURCE = "."
+SOURCE = "./"
 DEST   = "_site"
 CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
@@ -42,6 +42,7 @@ task :publish => [:updateSubmodules] do
     pwd = Dir.pwd
     Dir.chdir tmp
 
+    system "bundle exec jekyll build"
     system "git init"
     system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
     system "git add ."
