@@ -26,23 +26,22 @@ task :updateSubmodules do
 end
 
 # desc "Generate blog files"
-# task :generate do
-#   Jekyll::Site.new(Jekyll.configuration({
-#     "source"      => ".",
-#     "destination" => "_site",
-#     "config"      => "_config.yml"
-#   })).process
-# end
+task :generate do
+  Jekyll::Site.new(Jekyll.configuration({
+    "source"      => ".",
+    "destination" => "_site",
+    "config"      => "_config.yml"
+  })).process
+end
 
 desc "Generate and publish blog to gh-pages"
-task :publish => [:updateSubmodules] do
+task :publish => [:updateSubmodules, :generate] do
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
 
     pwd = Dir.pwd
     Dir.chdir tmp
 
-    system "bundle exec jekyll build"
     system "git init"
     system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
     system "git add ."
