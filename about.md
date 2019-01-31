@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-<p class="about-header-image"><img src="/assets/images/james-about.jpg" alt="James Mensch image" /></p>
+<p class="about-header-image"><img src="/assets/images/james-about.JPG" alt="James Mensch image" /></p>
 
 <h1 style="text-align: center;">Hi, I'm James. It's nice to meet you.</h1>
 
