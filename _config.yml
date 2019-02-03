@@ -42,13 +42,13 @@ twitter: thebestmensch
 linkedin: james-mensch
 # youtube: myyoutube
 # spotify: myspotify
-github: jmensch
+# github: jmensch
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: james_mensch
+# medium: james_mensch
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: james@jamesmensch.com
@@ -106,5 +106,5 @@ jekyll-mentions:
     base_url: https://github.com
 
 jekyll_admin:
-  hidden_links:
-    - datafiles
+    hidden_links:
+        - datafiles
