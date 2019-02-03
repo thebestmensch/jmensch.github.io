@@ -54,18 +54,12 @@ medium: james_mensch
 email: james@jamesmensch.com
 
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    jamesmensch:
+        name: James Mensch
+        bio: Engineer & Founder
         external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        picture: assets/images/james-home.JPG
+        twitter: thebestmensch
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -110,3 +104,7 @@ plugins:
 
 jekyll-mentions:
     base_url: https://github.com
+
+jekyll_admin:
+  hidden_links:
+    - datafiles
