@@ -17,16 +17,11 @@ picture: assets/images/james-home.JPG
 # resume-url: https://google.com/?q=my+resume
 
 url: http://jamesmensch.com
-# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
 analytics-google: "UA-50442505-1"
-
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
